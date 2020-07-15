@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet"> 
+    <script src="app.js"></script>
+    <script src="skycons-master\skycons.js" ></script>
+</head>
+<body>
+    <div id="headspace"></div>
+    <div id="headingdiv">
+        <h1>Weather app</h1>
+        <h6 id="signature">Site by <a href="https://github.com/Espreesso">Espresso</a></h6>
+    </div>
+    <div id="inputdiv">
+        <form>
+            <input type="text" placeholder="Search your location" id="locationsearch" value=""  onkeydown="if (event.keyCode == 13) return false"></input>
+            <br>
+            <button type="button" id="locationbutton" onclick="searchWeather()">Search</button>
+        </form>
+    </div>
+    <div id="contentdiv">
+        <div>
+            <canvas id="icon1" width="256" height="256"></canvas>
+            <h3 id="location"></h3>
+            <p id="temperature"><span id="temp"></span><span id="unitchange" onclick="unitChange()">°C</span></p>
+            <p id="forecast"></p>
+        </div>
+    </div>
+    <script>var skycons = new Skycons({"color": "white"});</script>
+</body>
+</html>
