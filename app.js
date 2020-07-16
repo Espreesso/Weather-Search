@@ -67,9 +67,7 @@ const searchWeather = () => {
     })
 }
 
-document.getElementById("locationsearch").addEventListener("keypress", function(event) {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      document.getElementById("myBtn").click();
-    }
-  }); 
+document.getElementById("weatherForm").addEventListener("submit", () => {
+  event.preventDefault();
+  searchWeather();
+})
