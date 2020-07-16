@@ -9,28 +9,27 @@
     <title>Weather Searching Project app</title>
 </head>
 <body>
-    <div id="headspace"></div>
-    <div id="headingdiv">
+    <div>
         <h1>Weather app</h1>
-        <h6 id="signature">Site by <a href="https://github.com/Espreesso">Espresso</a></h6>
+        <h6 id="signature">Site by <a href="https://github.com/Espreesso">Espreesso</a></h6>
     </div>
-    <div id="inputdiv">
+    <div>
         <form id="weatherForm" >
             <input type="text" placeholder="Search your location" id="locationsearch" value=""></input>
             <br>
             <button type="submit" id="locationbutton">Search</button>
         </form>
     </div>
-    <div id="contentdiv">
+    <div>
         <div>
             <canvas id="icon1" width="256" height="256"></canvas>
             <h3 id="location"></h3>
-            <p id="temperature"><span id="temp"></span><span id="unitchange" onclick="unitChange()">°C</span></p>
+            <p id="temperature"><span id="temp"></span><span> </span><span id="unitchange" onclick="unitChange()">°C</span></p>
             <p id="forecast"></p>
         </div>
     </div>
     <script src="app.js"></script>
     <script src="skycons-master\skycons.js" ></script>
-    <script>var skycons = new Skycons({"color": "white"});</script>
+    <script>const skycons = new Skycons({"color": "white"});</script>
 </body>
 </html>

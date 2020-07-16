@@ -1,7 +1,8 @@
-body {
+* {
     font-family: 'Lemon', cursive;
     background-color: #161616;
     color: white;
+    text-align: center;
 }
 
 #signature {
@@ -12,24 +13,9 @@ body {
     color: inherit;
 }
 
-#headingdiv {
+div {
     font-size: 30px;
     text-align: center;
-}
-
-#inputdiv {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#contentdiv {
-    text-align: center;
-    margin-top: 30px;
-}
-
-#contentdiv h3 {
-    font-size: 3rem;
 }
 
 #temperature {
@@ -42,26 +28,18 @@ body {
     display: none;
 }
 
-#headspace {
-   height: 30px;
-}
-
 #locationsearch {
     background-color: #161616;
     color: white;
     border: 2px solid #555555;
     height: 60px;
     font-size: 25px;
-    text-align: center;
-    font-family: 'Lemon', cursive;
 
 }
 
 #locationbutton {
-    font-family: 'Lemon', cursive;
     color: white;
     padding: 16px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -79,16 +57,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    #headingdiv {
-        font-size: 5vw;
+
+    canvas {
+        width: 128px;
+        height: 128px;
     }
 
-    #contentdiv h3 {
-        font-size: 1rem;
-    }
-
-    #contentdiv canvas {
-        width: 35%;
-        height: 35%;
+    div {
+        font-size: 20px;
     }
 }
