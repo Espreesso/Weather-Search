@@ -1,7 +1,5 @@
 let tempUnit = "C";
 let temp, city, skyconStr, temperature;
-console.log(apiKey);type="module"
-
 
 const unitChange = () => {
     if (tempUnit === "C") {
@@ -70,5 +68,9 @@ const searchWeather = () => {
 
 document.getElementById("weatherForm").addEventListener("submit", () => {
   event.preventDefault();
+  let x = document.getElementsByClassName("results");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "";
+  }
   searchWeather();
 })

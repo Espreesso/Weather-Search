@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+div {
+    font-size: 30px;
+}
+
 #signature {
     color: lightskyblue;
 }
@@ -13,9 +17,25 @@
     color: inherit;
 }
 
-div {
-    font-size: 30px;
-    text-align: center;
+.hourly-results {
+    display: inline-flex;
+    width: 100%;
+    align-items: flex-start;
+    text-align: right;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.hour-element {
+    margin: 0 20px;
+}
+
+.week-element {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    border-bottom: #ffffff, 1px;
 }
 
 #temperature {

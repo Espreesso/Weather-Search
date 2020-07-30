@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet"> 
     <title>Weather Searching Project app</title>
-    <script src="key.js"></script>
+
 </head>
 <body>
     <div>
@@ -21,7 +21,7 @@
             <button type="submit" id="locationbutton">Search</button>
         </form>
     </div>
-    <div>
+    <div class="results" style="display:none">
         <div>
             <canvas id="icon1" width="256" height="256"></canvas>
             <h3 id="location"></h3>
@@ -29,9 +29,114 @@
             <p id="forecast"></p>
         </div>
     </div>
+    <div class="results" style="display:none">
+        <h3>Hourly forecast</h3>
+        <div class="hourly-results">
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="hour-element">
+                <h4>Now</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+        </div>
+    </div>
+    <div class="results" style="display:none">
+        <div id="weekly-results">
+            <h3>Forecast for the week</h3>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="week-element">
+                <h4>Today</h4>
+                <p>25C</p>
+                <p>Sunny</p>
+            </div>
+        </div>
+    </div>
+    <script src="key.js"></script>
     <script src="app.js"></script>
     <script src="skycons-master\skycons.js" ></script>
-    <!--<script type="module" src="key.js"></script>-->
     <script>const skycons = new Skycons({"color": "white"});</script>
 </body>
 </html>
