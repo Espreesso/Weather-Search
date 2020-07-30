@@ -1,5 +1,6 @@
 let tempUnit = "C";
 let temp, city, skyconStr, temperature;
+console.log(apiKey);type="module"
 
 
 const unitChange = () => {
@@ -17,7 +18,7 @@ const unitChange = () => {
 }
 
 const search = async (city) => {
-    const fetchResponse =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=59e9fd23a00d4aeae53499faec6ab2f1`);
+    const fetchResponse =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
     const jsonResponse = await fetchResponse.json()
     return response = {
       city: jsonResponse.name,
